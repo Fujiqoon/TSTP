@@ -4,6 +4,7 @@ class Stack():
 	def is_empty(self):
 		return self.items==[]
 	def push(self,word):
+		self.word=word   #なくてもいい
 		self.items.append(word)   #itemsを呼び出すことになるので、戻り値なくてよい
 	def pop(self):
 		return self.items.pop()   #引数とするため戻り値必要
